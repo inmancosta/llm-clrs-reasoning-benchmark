@@ -24,10 +24,10 @@ const Landing = () => {
           </div>
         </section>
         <div className="mt-8 space-x-4 text-center">
-          <a href="#" className="bg-blue-500 text-white py-2 px-4 rounded">
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/ataylor24/llm_algorithmic_reasoning" className="bg-blue-500 text-white py-2 px-4 rounded">
             Get Started
           </a>
-          <a href="#" className="bg-blue-500 text-white py-2 px-4 rounded">
+          <a href="#" rel="noopener noreferrer" className="bg-blue-500 text-white py-2 px-4 rounded">
             LLM-CLRS
           </a>
         </div>
@@ -94,7 +94,9 @@ const Landing = () => {
                 </p>
               </div>
               <a
-                href="#"
+                rel="noopener noreferrer"
+                href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/student-annotated.pdf"
+                target ="_blank"
                 className="text-center bg-blue-500 text-white py-1 px-4 rounded mt-4"
               >
                 Download paper here

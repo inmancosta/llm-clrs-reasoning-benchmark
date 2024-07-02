@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="bg-white text-gray-800 p-6 fixed w-full top-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">
+        <Link to="https://github.com/ataylor24/llm_algorithmic_reasoning" className="text-xl font-bold">
           <img src="/logo.png" alt="Logo" className="h-8 inline-block mr-2" />
           
         </Link>
