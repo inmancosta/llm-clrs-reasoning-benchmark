@@ -5,7 +5,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className='pt-24'>
+    <div className='pt-20'>
       <AppRouter />
     </div>
   );

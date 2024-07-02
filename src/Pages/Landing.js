@@ -10,7 +10,7 @@ const Landing = () => {
       <main className="p-0 m-0">
         <section
           className="mb-8 bg-cover bg-center w-full min-h-74 md:h-64 lg:h-64"
-          style={{ backgroundImage: 'url("/nodes.png")'}}
+          style={{ backgroundImage: 'url("/nodes1.jpeg")'}}
         >
           <div className="pt-12 pb-8 px-8 rounded-lg mx-auto max-w-screen-lg">
             <h2 className="text-5xl mb-4 mt-4">
