@@ -9,17 +9,17 @@ const Landing = () => {
       <NavBar />
       <main className="p-0 m-0">
         <section
-          className="mb-8 bg-cover bg-center w-full h-64 md:h-64 lg:h-64"
+          className="mb-8 bg-cover bg-center w-full min-h-74 md:h-64 lg:h-64"
           style={{ backgroundImage: 'url("/nodes.png")'}}
         >
-          <div className="p-8 rounded-lg mx-auto max-w-screen-lg">
-            <h2 className="text-4xl mb-4 mt-4">
+          <div className="pt-12 pb-8 px-8 rounded-lg mx-auto max-w-screen-lg">
+            <h2 className="text-5xl mb-4 mt-4">
               LLM-CLRS Graph Reasoning Benchmark
             </h2>
-            <p>
+            <h3 className="text-2xl mb-4 mt-4">
               Benchmark datasets, data loaders, and evaluators for graph machine
               learning.
-            </p>
+            </h3>
             
           </div>
         </section>
