@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className="bg-white text-gray-800 p-6 border-b-2 border-gray-300 fixed w-full top-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="https://github.com/ataylor24/llm_algorithmic_reasoning" className="text-xl font-bold flex-shrink-0">
+        <Link to="/" className="text-xl font-bold flex-shrink-0">
           <img src="/logo.png" alt="Logo" className="h-8 inline-block mr-2" />
         </Link>
         <div className="hidden md:flex space-x-4">
@@ -16,7 +16,7 @@ const NavBar = () => {
           <Link to="/datasets" className="hover:text-gray-300">Datasets</Link>
           <Link to="/team" className="hover:text-gray-300">Team</Link>
           <Link to="/updates" className="hover:text-gray-300">Updates</Link>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">GitHub</a>
+          <a href="https://github.com/ataylor24/llm_algorithmic_reasoning" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">GitHub</a>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-gray-800 focus:outline-none">
