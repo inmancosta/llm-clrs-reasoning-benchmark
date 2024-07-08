@@ -1,6 +1,7 @@
 // src/Pages/Landing.js
 import React from "react";
 import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 
 const Landing = () => {
@@ -105,6 +106,7 @@ const Landing = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
