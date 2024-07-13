@@ -2,7 +2,8 @@ import React from 'react';
 import ContactUs from '../Components/ContactUs';
 import NavBar from '../Components/NavBar';
 
-const LeaderBoard = () => {
+
+const Overview = () => {
     return (
       <div>
         <NavBar/>
@@ -11,4 +12,4 @@ const LeaderBoard = () => {
     );
   };
 
-export default LeaderBoard;
+export default Overview;
