@@ -29,112 +29,107 @@ export const BenchmarkLeaderboard = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow p-6">
-        <div className="max-w-2xl mx-auto bg-white p-6 shadow-md rounded-lg mb-6">
-          <h1 className="text-4xl font-bold mb-4">Leaderboards</h1>
-          <p className="mb-4">
-            Public leaderboards allow researchers to keep track of
-            state-of-the-art methods and encourage reproducible research.
-          </p>
-          <p className="font-bold mb-4">
-            Important: Please make sure your experimental protocol follows the
-            rules{" "}
-            <a href="#" className="text-blue-500">
-              here
-            </a>
-            .
-          </p>
-
-          <h2 className="text-xl font-bold mb-4">How Leaderboards Work?</h2>
-          <p className="mb-4">
-            Public leaderboards provide a platform for researchers to track the
-            latest advancements in their field and promote reproducibility.
-          </p>
-          <p className="font-bold mb-4">
-            Important: Ensure that your experimental procedures adhere to the
-            guidelines outlined{" "}
-            <a href="#" className="text-blue-500">
-              here
-            </a>
-            .
-          </p>
-
-          <h2 className="text-xl font-bold mb-4">How Leaderboards Work?</h2>
-          <p className="mb-4">
-            After you have developed your model and obtained results, you can
-            submit your test outcomes to our leaderboards. For each dataset,
-            please provide the following information:
-          </p>
-
+        <div className="max-w-2xl mx-auto bg-white p-6 shadow-md rounded-lg mb-10">
+          <h1 className="text-4xl font-bold mb-4">Features</h1>
           <ul className="list-disc pl-6 mb-4">
             <li>
-              <strong>Leaderboard version:</strong> The version of the
-              leaderboard used for the experiments.{" "}
-              <strong>
-                Ensure compatibility with the version requirements for each
-                dataset.
-              </strong>
+              <strong>Comprehensive Benchmark:</strong> Evaluates LLM
+              performance on classical graph algorithms.
             </li>
             <li>
-              <strong>Method:</strong> The name of your method or algorithm.
+              <strong>Intermediate Steps Evaluation:</strong> Focuses on the
+              accuracy of intermediate reasoning steps.
             </li>
             <li>
-              <strong>External data:</strong> If your model uses external data
-              (such as pre-trained models, raw text, or labeled/unlabeled data),
-              indicate this in your method name, e.g., ABC (trained on XYZ
-              dataset).
+              <strong>Multiple Algorithms:</strong> Includes BFS, DFS,
+              Dijkstra's, Floyd-Warshall, and Prim's MST.
             </li>
             <li>
-              <strong>Dataset:</strong> The name of the dataset used to evaluate
-              your method.
-            </li>
-            <li>
-              <strong>Test performance:</strong> Report the raw test performance
-              output, averaged over multiple runs. Ensure that you use different
-              random seeds for a robust evaluation. For example, use{" "}
-              <code className="bg-gray-200 p-1 rounded">random.seed</code> to
-              generate different random seeds for each run.
-            </li>
-            <li>
-              <strong>Validation performance:</strong> Provide the validation
-              performance of your model as well.
-            </li>
-            <li>
-              <strong>Contact:</strong> The name and email address of the
-              contact person for this method.
-            </li>
-            <li>
-              <strong>Code:</strong> Provide a link to the GitHub repository or
-              directory containing all the code required to reproduce your
-              results.{" "}
-              <strong>Placeholder repositories are not allowed.</strong>
-            </li>
-            <li>
-              <strong>Paper:</strong> Include a link to the original paper
-              describing your method (an arXiv link is preferred, but
-              peer-review is not mandatory). If your method combines existing
-              techniques, document how you combined them in a technical report.
-            </li>
-            <li>
-              <strong>#Params:</strong> Indicate the number of parameters in
-              your model, calculated by{" "}
-              <code className="bg-gray-200 p-1 rounded">
-                sum(p.numel() for p in model.parameters())
-              </code>
-              . If using multi-stage training (e.g., node2vec followed by MLP),
-              sum the parameters from each stage.
-            </li>
-            <li>
-              <strong>Tuned hyper-parameters:</strong> Disclose all the
-              hyper-parameters you tuned, and the values you tried for each. Use
-              the following format:{" "}
-              <code className="bg-gray-200 p-1 rounded">
-                "lr: [0.001*, 0.01], num_layers: [4*,5], hidden_channels: [128,
-                256*], dropout: [0*, 0.5], epochs: 400*, batch_size: 32*,
-                early-stop"
-              </code>
-              , where the asterisks (*) indicate the tuned hyper-parameters.
+              <strong>Advanced Prompting Techniques:</strong> Explores advanced
+              prompting techniques and algorithmic instructions.
             </li>
           </ul>
+
+          <div className="my-6"></div>
+          
+          <h1 className="text-4xl font-bold mb-4">Installation Process</h1>
+          <h2 className="text-xl font-bold mb-4">Prerequisites</h2>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Python 3.10 or higher</li>
+          </ul>
+
+          <h2 className="text-xl font-bold mb-4">Clone the Repository</h2>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              git clone
+              https://github.com/yourusername/LLM-CLRS-Graph-Reasoning-Benchmark.git
+            </code>
+          </p>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              cd LLM-CLRS-Graph-Reasoning-Benchmark
+            </code>
+          </p>
+
+          <h2 className="text-xl font-bold mb-4">Create a Conda Environment</h2>
+          <p className="mb-4">
+            To create a Conda environment with the required dependencies, run
+            the following command:
+          </p>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              conda env create --file environment.yml
+            </code>
+          </p>
+          <p className="mb-4">
+            This will create a new Conda environment with all the dependencies
+            specified in the environment.yml file.
+          </p>
+
+          <h2 className="text-xl font-bold mb-4">
+            Activate the Conda Environment
+          </h2>
+          <p className="mb-4">Activate the newly created environment using:</p>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              conda activate llm_gar
+            </code>
+          </p>
+
+          <h2 className="text-xl font-bold mb-4">Training Baseline Models</h2>
+          <p className="mb-4">
+            An example of a script used to run the benchmark on the included
+            algorithms is included in run_scripts.
+          </p>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              bash run_scripts/bfs_CoT.sh
+            </code>
+          </p>
+
+          <h2 className="text-xl font-bold mb-4">
+            Running Inference with Trained Models
+          </h2>
+          <p className="mb-4">
+            An example of a script used to run the benchmark on a selected
+            algorithm is included in inference_scripts.
+          </p>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              bash inference_scripts/bfs_CoT.sh
+            </code>
+          </p>
+
+          <h2 className="text-xl font-bold mb-4">Configuration</h2>
+          <p className="mb-4">
+            You can customize the benchmark settings using the configuration
+            file:
+          </p>
+          <p className="mb-4">
+            <code className="bg-gray-200 p-1 rounded">
+              configuration_example/config_qlora.yaml
+            </code>
+          </p>
         </div>
 
         <div className="max-w-2xl mx-auto bg-white p-6 shadow-md rounded-lg">

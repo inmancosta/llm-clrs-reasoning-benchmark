@@ -3,7 +3,6 @@ import React from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
-
 const Landing = () => {
   return (
     <div>
@@ -11,7 +10,7 @@ const Landing = () => {
       <main className="p-0 m-0">
         <section
           className="mb-8 bg-cover bg-center w-full min-h-74 md:h-64 lg:h-64"
-          style={{ backgroundImage: 'url("/nodes1.jpeg")'}}
+          style={{ backgroundImage: 'url("/nodes1.jpeg")' }}
         >
           <div className="pt-12 pb-8 px-8 rounded-lg mx-auto max-w-screen-lg">
             <h2 className="text-5xl mb-4 mt-4">
@@ -21,14 +20,22 @@ const Landing = () => {
               Benchmark datasets, data loaders, and evaluators for graph machine
               learning.
             </h3>
-            
           </div>
         </section>
         <div className="mt-8 space-x-4 text-center">
-          <a rel="noopener noreferrer" target="_blank" href="https://github.com/ataylor24/llm_algorithmic_reasoning" className="bg-blue-500 text-white py-2 px-4 rounded">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/ataylor24/llm_algorithmic_reasoning"
+            className="bg-blue-500 text-white py-2 px-4 rounded"
+          >
             Get Started
           </a>
-          <a href="#" rel="noopener noreferrer" className="bg-blue-500 text-white py-2 px-4 rounded">
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            className="bg-blue-500 text-white py-2 px-4 rounded"
+          >
             LLM-CLRS
           </a>
         </div>
@@ -56,32 +63,50 @@ const Landing = () => {
             </p>
           </div>
         </section>
-        <section className="mb-8 p-4 ">
-          <div className="p-8  mx-auto max-w-screen-lg border-b">
-            <h3 className="text-xl mb-2">Comprehensive Evaluation</h3>
-            <p className="pb-12">
-              The LLM-CLRS Benchmark provides a diverse set of challenging and
-              realistic datasets designed to test the multistep reasoning
-              capabilities of large language models (LLMs) on classical graph
-              algorithms. These datasets cover a variety of sizes and
-              complexities, ensuring a thorough evaluation of LLM performance on
-              tasks such as Breadth-First Search (BFS), Depth-First Search
-              (DFS), Dijkstra’s algorithm, Floyd-Warshall algorithm, and Prim’s
-              Minimum Spanning Tree (MST-Prim).
-            </p>
-          </div>
-        </section>
-        <section className="mb-8 p-4 ">
-          <div className="p-8 mx-auto max-w-screen-lg border-b">
-            <h3 className="text-xl mb-2">Advanced Prompting Techniques</h3>
-            <p className="pb-8">
-              We explore various prompting strategies, including Input-Output
-              (IO), Chain-of-Thought (CoT), Tree-of-Thought (ToT), and
-              Graph-of-Thought (GoT), to assess their effectiveness in enhancing
-              LLMs' reasoning abilities. These strategies provide the models
-              with the necessary context and guidance to improve their
-              performance on complex graph reasoning tasks.
-            </p>
+        <section className="mb-8 p-4">
+          <div className="flex flex-wrap justify-between text-center mx-auto max-w-screen-lg border-b">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 flex flex-col items-center">
+          <svg class="h-16 w-16 text-indigo-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="21 12 17 12 14 20 10 4 7 12 3 12" /></svg>
+              <h3 className="text-xl font-semibold mb-2">
+                Comprehensive Benchmark
+              </h3>
+              <p className="text-gray-700">
+                Our benchmark is designed to assess the performance of Large
+                Language Models (LLMs) on various classical graph algorithms.
+                This ensures a thorough evaluation of their ability to
+                understand and process graph-based data, providing a
+                standardized way to measure and compare different models.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 lg:w-1/4 p-4 flex flex-col items-center">
+            <svg class="h-16 w-16 text-indigo-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 5H7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2V7a2 2 0 0 0 -2 -2h-2" />  <rect x="9" y="3" width="6" height="4" rx="2" />  <line x1="9" y1="12" x2="9.01" y2="12" />  <line x1="13" y1="12" x2="15" y2="12" />  <line x1="9" y1="16" x2="9.01" y2="16" />  <line x1="13" y1="16" x2="15" y2="16" /></svg>
+            
+              <h3 className="text-xl font-semibold mb-2">
+                Intermediate Steps Evaluation
+              </h3>
+              <p className="text-gray-700">
+                We focus on the accuracy of the intermediate reasoning steps
+                taken by LLMs, not just the final answers. This approach helps
+                identify potential errors in their reasoning process and
+                provides insights into how models process information, enhancing
+                their overall problem-solving capabilities.
+              </p>
+            </div>
+
+            <div className="w-full sm:w-1/2 lg:w-1/4 p-4 flex flex-col items-center">
+            <svg class="h-16 w-16 text-indigo-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="14" cy="6" r="2" />  <line x1="4" y1="6" x2="12" y2="6" />  <line x1="16" y1="6" x2="20" y2="6" />  <circle cx="8" cy="12" r="2" />  <line x1="4" y1="12" x2="6" y2="12" />  <line x1="10" y1="12" x2="20" y2="12" />  <circle cx="17" cy="18" r="2" />  <line x1="4" y1="18" x2="15" y2="18" />  <line x1="19" y1="18" x2="20" y2="18" /></svg>
+              <h3 className="text-xl font-semibold mb-2">
+                Advanced Prompting Techniques
+              </h3>
+              <p className="text-gray-700">
+                We explore sophisticated prompting methods to guide LLMs in
+                performing graph algorithms. This includes providing
+                step-by-step instructions, structured hints, and multi-step
+                prompts. These techniques aim to enhance the model's
+                understanding and execution of graph algorithms, making them
+                more effective and reliable in solving complex problems.
+              </p>
+            </div>
           </div>
         </section>
         <section className="mb-8 p-4">
@@ -97,7 +122,7 @@ const Landing = () => {
               <a
                 rel="noopener noreferrer"
                 href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/student-annotated.pdf"
-                target ="_blank"
+                target="_blank"
                 className="text-center bg-blue-500 text-white py-1 px-4 rounded mt-4"
               >
                 Download paper here
